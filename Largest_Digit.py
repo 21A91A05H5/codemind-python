@@ -1,4 +1,4 @@
-n=(int)(input())
+n=int(input())
 i=len(str(n))
 b=0
 for x in range(i):
