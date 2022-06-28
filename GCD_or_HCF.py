@@ -1,8 +1,6 @@
+def hcf(a,b):
+    while b:
+        a,b=b,a%b
+    return abs(a)
 a,b=map(int,input().split())
-while b>0:
-    if a>b:
-        a=a+b
-        b=a-b
-        a=a-b
-    b=b%a
-print(a)
+print(hcf(a,b))
