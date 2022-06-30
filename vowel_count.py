@@ -1,7 +1,10 @@
-str=input()
+s=input()
+#x=input()
 c=0
-vowels=set("aeiouAEIOU")
-for i in str:
-    if i in vowels:
+vowel=set("aeiouAEIOU")
+for i in range(0,len(s)):
+    if s[i] in vowel:
         c+=1
 print(c)
+    
+       
