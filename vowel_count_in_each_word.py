@@ -1,10 +1,12 @@
 n=input()
-a=set('aeiouAEIOU')
+n.lower()
+l=[]
 c=0
+s=set("aeiou")
 for i in n.split():
     c=0
-    x=list(i)
-    for j in x:
-        if j in a:
+    for j in i:
+        if j in s:
             c+=1
-    print(c,end=' ')
+    l.append(c)
+print(*l)
