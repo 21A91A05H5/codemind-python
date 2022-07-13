@@ -1,8 +1,7 @@
 n=input()
-#print(n)
-a=set("@_#$!%^&*.|")
 c=0
-for i in range(len(n)):
-    if n[i] in a:
+s=set("!~@#$%^&*()_+=-{}[]:;'?><,./|\`''")
+for i in n:
+    if i in s:
         c+=1
 print(c)
