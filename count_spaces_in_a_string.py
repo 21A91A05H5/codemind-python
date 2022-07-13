@@ -1,6 +1,6 @@
 n=input()
 c=0
-for i in range(len(n)):
-    if(n[i]==' '):
+for i in n:
+    if i==' ':
         c+=1
 print(c)
