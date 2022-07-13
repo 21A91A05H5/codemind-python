@@ -1,13 +1,21 @@
 n=input()
-a=set('aeiouAEIOU')
-c=0
+n.lower()
 l=[]
+c=0
+d=0
+s=set("aeiou")
 for i in n.split():
     c=0
-    x=list(i)
-    for j in x:
-        if j in a:
+    for j in i:
+        if j in s:
             c+=1
     l.append(c)
 x=min(l)
-print(l.count(x))
+for i in n.split():
+    c=0
+    for j in i:
+        if j in s:
+            c+=1
+    if c==x:
+        d+=1
+print(d)
