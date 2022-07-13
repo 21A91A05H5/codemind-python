@@ -1,7 +1,6 @@
 n=input()
 c=0
-for i in range(len(n)):
-    if n[i]!=' ':
-        c+=1
+for i in n.split():
+    x=len(i)
+    c+=x
 print(c)
-        
