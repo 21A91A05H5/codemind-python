@@ -1,15 +1,13 @@
-n=input()
-x=[]
-c=0
-l=['a','e','i','o','u']
-for i in n:
-    if i in l:
-        x.append(i)
-for i in l:
-    if i not in x:
-        print(i,end=' ')
-    else:
-        # print('0')
-        c+=1
-if c==len(l):
-    print('0')
+s=input()
+s=s.lower()
+a="aeiou"
+a=list(a)
+k=0
+for i in s:
+    if i in a:
+        a.remove(i)
+if len(a)==0:
+    print(0)
+else:
+    for i in range(len(a)):
+        print(a[i],end=' ')
