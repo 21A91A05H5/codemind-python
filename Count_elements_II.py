@@ -1,14 +1,11 @@
-n,m=map(int,input().split())
+a,b=map(int,input().split())
 l=list(map(int,input().split()))
-z=list(map(int,input().split()))
-l=set(l)
-z=set(z)
+m=list(map(int,input().split()))
 c=0
-for i in l:
-    if i not in z:
-        c=c+1
-for i in z:
+for i in set(l):
+    if i not in m:
+        c+=1
+for i in set(m):
     if i not in l:
-        c=c+1
+        c+=1
 print(c)
-        
