@@ -1,10 +1,13 @@
-n,m=map(int,input().split())
-a=list(map(int,input().split()))
-b=list(map(int,input().split()))
-p=[]
-p=sorted(set(b))
-for i in range(len(a)):
-    for j in range(len(p)):
-        if(a[i]==p[j] and a[i]!=-1):
-            p[j]=-1;
-            print(a[i],end=" ")
+a,b=map(int,input().split())
+l=(list(map(int,input().split())))
+m=(list(map(int,input().split())))
+c=0
+s=[]
+for i in (l):
+    if i in m and i not in s:
+        # print(i,end=' ')
+        s.append(i)
+print(*s)
+# for i in set(m):
+#     if i in l:
+#         print(i,end=' ')
