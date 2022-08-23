@@ -1,10 +1,4 @@
-n=input()
-c=0
-l=[]
-for i in n.split():
-    l.append(i)
-x=len(l)
-a=l[x-1]
-for i in a:
-    print(i)
-    break
+s=input().split()
+x=s[len(s)-1]
+print(x[0:1])
+# print(input().split()[-1][0])
