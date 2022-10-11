@@ -1,7 +1,6 @@
 a=input().lower()
 s=''
 for i in a:
-    if a.count(i)==1 and i!=' ':
+    if i not in s and i!=' ':
         s+=i
-s=sorted(s)
-print(''.join(s))
+print(''.join(sorted(s)))
